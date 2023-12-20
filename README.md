@@ -1,5 +1,5 @@
 # Appcopier
-Back up key things on your Windows PC
+### Back up key things on your Windows PC
 
 This small project is still in the making. It allows you to back up and restore your most important Windows 11 preferences and settings offline and locally. The app [mimics the new backup app of Windows 11](https://support.microsoft.com/en-us/windows/back-up-your-windows-pc-87a81f8a-78fa-456e-b521-ac0560e32338) -  which is part of the Windows 11 2023 Update (23H2) - but without the obligation of the cloud. I will certainly expand and enhance it over time. 
 

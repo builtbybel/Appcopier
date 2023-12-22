@@ -11,7 +11,6 @@ The project might remind some of you of one of my first public projects - CloneA
 
 I've written and tested **Appcopier on Windows 11**, but it should also run on Windows 10 (no guarantee from me, though). Give it a try! This is the first release, and there's more to come.
 
-![screenshot](https://github.com/builtbybel/Appcopier/blob/main/assets/appcopier.png?raw=true)
 
 
 

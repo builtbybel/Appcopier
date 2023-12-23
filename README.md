@@ -12,6 +12,6 @@ The project might remind some of you of one of my first public projects - CloneA
 I've written and tested **Appcopier on Windows 11**, but it should also run on Windows 10 (no guarantee from me, though). Give it a try! This is the first release, and there's more to come.
 
 
-DISCLAIMER: This app only backs up the options selected, it won't back up everything. If you will reset your PC or sell the PC, back up the entire AppData folder if you want to be safe.
+DISCLAIMER: This app only backs up the options selected, it won't back up everything. If you will reset your PC or sell the PC, back up the entire AppData folder just in case something is missing.
 
 

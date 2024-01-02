@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{726AAF09-C2D4-4C5C-A61F-3DADAE0B5CBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Appcopier</RootNamespace>
+    <AssemblyName>Appcopier</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackupBase.cs" />
+    <Compile Include="Conf\AStoreApps.cs" />
+    <Compile Include="Conf\BGoogleChrome.cs" />
+    <Compile Include="Conf\BMicrosoftEdge.cs" />
+    <Compile Include="Conf\BMozillaFirefox.cs" />
+    <Compile Include="Conf\DKeyboard.cs" />
+    <Compile Include="Conf\DMouse.cs" />
+    <Compile Include="Conf\DPrinters.cs" />
+    <Compile Include="Conf\DTouchpad.cs" />
+    <Compile Include="Conf\DUSB.cs" />
+    <Compile Include="Conf\GGaming.cs" />
+    <Compile Include="Conf\WAccessibility.cs" />
+    <Compile Include="Conf\WAPrivacy.cs" />
+    <Compile Include="Conf\CWiFiConf.cs" />
+    <Compile Include="Conf\WNetworkConf.cs" />
+    <Compile Include="Conf\WOther.cs" />
+    <Compile Include="Conf\WPersonalization.cs" />
+    <Compile Include="Conf\APinnedApps.cs" />
+    <Compile Include="Conf\WPrivacy.cs" />
+    <Compile Include="Conf\WTaskbar.cs" />
+    <Compile Include="Conf\WTelemetry.cs" />
+    <Compile Include="Conf\WUpdates.cs" />
+    <Compile Include="Conf\WVisualEffects.cs" />
+    <Compile Include="Conf\WThemes.cs" />
+    <Compile Include="GitHub.cs" />
+    <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Helpers\LogHelper.cs" />
+    <Compile Include="Helpers\OSHelper.cs" />
+    <Compile Include="Helpers\ViewHelper.cs" />
+    <Compile Include="Helpers\WindowsHelper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AboutPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AboutPageView.Designer.cs">
+      <DependentUpon>AboutPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConfPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ConfPageView.Designer.cs">
+      <DependentUpon>ConfPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RestPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RestPageView.Designer.cs">
+      <DependentUpon>RestPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RestAppsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RestAppsForm.Designer.cs">
+      <DependentUpon>RestAppsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\AboutPageView.resx">
+      <DependentUpon>AboutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ConfPageView.resx">
+      <DependentUpon>ConfPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RestPageView.resx">
+      <DependentUpon>RestPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RestAppsForm.resx">
+      <DependentUpon>RestAppsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

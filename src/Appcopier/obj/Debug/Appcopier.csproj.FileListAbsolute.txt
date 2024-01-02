@@ -1,0 +1,17 @@
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\bin\Debug\Appcopier.exe.config
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\bin\Debug\Appcopier.exe
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\bin\Debug\Appcopier.pdb
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.csproj.AssemblyReference.cache
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.MainForm.resources
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.Properties.Resources.resources
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Views.AboutPageView.resources
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Views.ConfPageView.resources
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Views.RestPageView.resources
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Views.RestAppsForm.resources
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.csproj.GenerateResource.cache
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.csproj.CoreCompileInputs.cache
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.csproj.CopyComplete
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.exe
+C:\Users\Belim\Desktop\Appcopier-0.30.0\src\Appcopier\obj\Debug\Appcopier.pdb

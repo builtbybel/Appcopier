@@ -183,7 +183,7 @@ namespace Appcopier
             }
             catch (Exception ex)
             {
-                // Handle exceptions as needed
+   
                 Console.WriteLine($"Error: {ex.Message}");
             }
 
